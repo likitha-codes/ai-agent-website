@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <style>
+    .eye-stroke { stroke: #111111; fill: none; }
+    @media (prefers-color-scheme: dark) {
+      .eye-stroke { stroke: #ffffff; }
+      .pupil { fill: #ffffff; }
+      .pupil-highlight { fill: #111111; }
+    }
+    .pupil { fill: #111111; }
+    .pupil-highlight { fill: #ffffff; }
+  </style>
+
+  <!-- Outer eye shape -->
+  <path class="eye-stroke" d="M20,100 C60,30 140,30 180,100 C140,170 60,170 20,100 Z"
+    stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+
+  <!-- Inner eye shape -->
+  <path class="eye-stroke" d="M38,100 C70,48 130,48 162,100 C130,152 70,152 38,100 Z"
+    stroke-width="2"/>
+
+  <!-- Corner accent lines -->
+  <line class="eye-stroke" x1="20" y1="100" x2="4" y2="100" stroke-width="4" stroke-linecap="round"/>
+  <line class="eye-stroke" x1="180" y1="100" x2="196" y2="100" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Outer iris circle -->
+  <circle class="eye-stroke" cx="100" cy="100" r="36" stroke-width="3.5"/>
+  <!-- Middle iris ring -->
+  <circle class="eye-stroke" cx="100" cy="100" r="25" stroke-width="2"/>
+  <!-- Inner iris ring -->
+  <circle class="eye-stroke" cx="100" cy="100" r="15" stroke-width="1.5"/>
+
+  <!-- Pupil -->
+  <circle class="pupil" cx="100" cy="100" r="7"/>
+  <!-- Highlight -->
+  <circle class="pupil-highlight" cx="97" cy="97" r="2"/>
+</svg>
