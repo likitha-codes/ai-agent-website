@@ -237,10 +237,10 @@ saveChatToHistory(sessionId, finalMessages);
           {messages.map((msg, index) => (
   <div
     key={index}
-    className={`max-w-2xl px-4 py-3 rounded-lg ${
-      msg.sender === "user"
-        ? "bg-blue-600 ml-auto text-white"
-        : "bg-gray-700 text-white"
+    className={`px-4 py-2 rounded-2xl shadow-md leading-relaxed ${
+  msg.sender === "user"
+    ? "max-w-[65%] ml-auto bg-blue-600 text-white text-base"
+    : "max-w-[60%] mr-auto bg-gray-700 text-white text-base"
     }`}
   
   >
